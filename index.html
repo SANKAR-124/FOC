@@ -1,0 +1,223 @@
+<!DOCTTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="witdh=device-width,initial-scale=1.0">
+        <title>FOC-CHEATCODE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><strong>FOUNDATION OF COMPUTING</strong></h1>
+        </header>
+        <header id="searchbar">
+        <input type="text" id="searchInput" placeholder="search">
+        <button onclick="searchTopics()">Search</button>
+        <button onclick="resetSearch()">Reset</button>
+        </header>
+        <br><br>
+        <br>
+        <br>
+        <h2>MODULE 1</h2><br>
+        <h2>COMPUTER ORGANISATION AND ARCHITECTURE</h2>
+        <BR><BR>
+        <section class="topic">
+            <header>
+                <h3>1. Introduction to Computer Organisation and Architecture</h3>
+            </header>
+            <p><b>Computer Organization</b></p>
+            <ul>
+                <li>Deals with operational units and interconnections that realize hardware functions.</li>
+                <li>Focuses on how components work together (e.g., control signals, memory interface).</li>
+            </ul>
+            <p><b>Computer Architecture</b></p>
+            <ul>
+                <li>Concerned with attributes visible to the programmer.</li>
+                <li>Focuses on instruction set, addressing modes, data types.</li>
+            </ul>
+        </section>
+        <section class="topic">
+            <table border="1">
+                <th>ASPECT</th>
+                <th>COMPUTER ARCHITECTURE</th>
+                <th>COMPUTER ORGANISATION</th>
+                <tr>
+                    <td>Definition</td>
+                    <td>Programmer-visible aspects</td>
+                    <td>Hardware implementation</td>
+                </tr>
+                <tr>
+                    <td>Focus</td>
+                    <td>Instruction set, memory addressing</td>
+                    <td>Control signals, memory types</td>
+                </tr>
+                <tr>
+                    <td>Concern</td>
+                    <td>What a computer does</td>
+                    <td>How it does it</td>
+                </tr>
+        
+            </table>
+            <header>
+                <h3>2.FUNCTIONAL UNITS OF A COMPUTER</h3>
+            </header>
+            <p>
+            <ol>
+                <li>Input Unit - Accepts data (keyboard, mouse).</li>
+                <li>Output Unit - Displays output (monitor, printer).</li>
+                <li>memory unit</li>
+                <ul>
+                    <li>Primary (RAM, ROM)</li>
+                    <li>Secondary (HDD, SSD)</li>
+                </ul>
+                <li>Arithmetic and Logic Unit (ALU) – Performs arithmetic & logic operations.</li>
+                <li>Control Unit (CU) – Directs operations of CPU.</li>
+                <li>Central Processing Unit (CPU) = ALU + CU</li>
+                <li>Registers – Small fast storage (accumulator, program counter).</li>
+            </ol>
+            </p>
+            <h3>3.BASIC OPERATION CONCEPTS</h3>
+            <p>
+            <ul>
+                <li>Stored Program Concept – Program instructions stored in memory.</li>
+                <li>Fetch-Decode-Execute Cycle – Basic operation of CPU.</li>
+                <li>Instruction Format – Opcode + operands.</li>
+            </ul>
+            </p>
+            <header>
+                <h3>4.Von Neumann Architecture</h3>
+            </header>
+            <P>
+            <UL>
+                <LI>Single memory stores both instructions & data</LI>
+                <li>Components: CPU, memory, input/output.</li>
+                <li>Bottleneck: Single bus limits data transfer speed</li>
+            </UL>
+            </P>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidvzyyggbgt7UZJs08jSMkx6ZH5BFNzakJj3oNwet_mgpCrmS3vQCy0FNzEXDkHe-09m_JSE4UzBbnUvfQOckP8wcrv_HslCjljIuSBFeHMydXQwZRO0AwYV8R5myjXdM7xF6IW9f2tA2YSLbkXM9L3CCDQrcT2nxk1nLM70tgd49kmkrpcZWad12eiZOS/s700/x.jpg"
+                alt="something" width="800"><br><br>
+        </section>
+        <section class="topic">
+            <header>
+                <h3>5.INSTRUCTUON EXECUTION CYCLE</h3>
+            </header>
+            <p>
+            <table border="1">
+                <th>STEP</th>
+                <th>DESCRIPTION</th>
+                <tr>
+                    <td>fetch</td>
+                    <td>Retrieve instruction from memory</td>
+                </tr>
+                <tr>
+                    <td>Decode</td>
+                    <td>Interpret instruction</td>
+                </tr>
+                <tr>
+                    <td>execute</td>
+                    <td>Perform operation</td>
+        
+                </tr>
+                <tr>
+                    <td>Store</td>
+                    <td>save result</td>
+                </tr>
+            </table>
+            </p>
+            <header>
+                <h3>6.REGISTER TRANSFER LANGUAGE</h3>
+            </header>
+            <P>
+            <UL>
+                <LI>Symbolic notation for micro-operations.</LI>
+                <li>Example:</li>
+                <p>R2<--R1+R3(ADD R1&R3,STORE IN R3)</p>
+            </UL>
+            </P>
+            <HEADER>
+                <h3>7.BUS STRUCTURE</h3>
+            </HEADER>
+            <p>
+            <ul>
+                <li>Shared communication path among components.</li>
+                <li>Data Bus (bidirectional, transfers data)</li>
+                <li>Address Bus (unidirectional, specifies memory location)</li>
+                <li>Control Bus (bidirectional, carries control signals)</li>
+            </ul>
+            </p>
+            <header>
+                <h3>8.MEMORY LOCATIONS AND ADDRESSES</h3>
+            </header>
+            <P>
+            <UL>
+                <LI>Word – Basic unit of data (2/4 bytes).</LI>
+                <li>Byte Addressable Memory – Each byte has a unique address</li>
+                <li>Big-Endian – MSB stored at lower address</li>
+                <li>Little-Endian – LSB stored at lower address</li>
+            </UL>
+            </P>
+            <header>
+                <h3>
+                    9.MEMORY OPERATIONS
+                </h3>
+            </header>
+            <P>
+            <ul>
+                <li>Read Operation: Memory → CPU</li>
+                <li>Write Operation: CPU → Memory</li>
+            </ul>
+            </P>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhU-m9EyS2TNosmOmWvRHtViW4QS5adNFz2244V2hLuNwmGqJXfuWKJ0SlPo7xnvc3GnWjfJM9lBTX-S_zm4o1czcPusirYXJRkxlGFlSofiuH9vGtx23IyrbKMT5e6-l-vish1H1uNJYYvYIwVKW0t31blfjUM-_6I6nniQE7fGFbmkiFv8pofBK6fM2X7/s1000/x.png"
+                alt="memory" width="800"><br><br>
+            <header>
+                <h3>10.Instruction Format and Types</h3>
+            </header>
+            <P>
+            <ul>
+                <li>Instruction Format:</li>
+                <p>Opcode + Address/Operands</p>
+                <li>Types of Instructions:</li>
+                <ul>
+                    <li>Data transfer (MOV)</li>
+                    <li>Arithmetic (ADD)</li>
+                    <li>Logical (AND)</li>
+                    <li>Branch (JMP)</li>
+                </ul>
+            </ul>
+            </P>
+        </section>
+        <br><br>
+        <footer>
+            <p style="text-align: center;">&copy; SANKAR ONLY</p>
+        </footer>
+
+        <script>
+            function searchTopics() {
+                const input = document.getElementById('searchInput').value.toLowerCase();
+                const sections = document.getElementsByClassName('topic');
+
+                for (let i = 0; i < sections.length; i++) {
+                    const sectionText = sections[i].textContent.toLowerCase(); // Use textContent for better compatibility
+                    if (sectionText.includes(input)) {
+                        sections[i].style.display = 'block';
+                    } else {
+                        sections[i].style.display = 'none';
+                    }
+                }
+            }
+
+            function resetSearch() {
+                document.getElementById('searchInput').value = '';
+                const sections = document.getElementsByClassName('topic');
+                for (let i = 0; i < sections.length; i++) {
+                    sections[i].style.display = 'block';
+                }
+            }
+        </script>
+          
+
+    </body>
+
+    </html>
